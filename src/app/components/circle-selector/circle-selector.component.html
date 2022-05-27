@@ -10,7 +10,7 @@
             (click)="onClick($event)" 
             class="circle-selector-circle" 
             [style]="circleStyle" 
-            *appCircles="numberList; let i=index;"
+            *ngFor="let num of numberList; let i=index;"
         >
             {{ numberList[i] }}
         </div>
