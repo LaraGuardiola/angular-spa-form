@@ -1,6 +1,6 @@
 <div class="navigation-line">
     <div class="line">
-        <ng-container *appNavigationLine="elemList; let i = index">
+        <ng-container *ngFor="let elem of elemList; let i = index">
             <div class="nav-circle" [style]="circleStyle" #circle>
                 <div #tick>
                     <fa-icon [icon]="symbol"></fa-icon>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="list">
-        <ng-container *appNavigationLine="elemList; let i = index">
+        <ng-container *ngFor="let elem of elemList; let i = index">
             <div #list class="list-line" [style]="listStyle">
                 {{ elemList[i] }}
             </div>
