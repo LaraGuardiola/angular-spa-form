@@ -1,0 +1,11 @@
+.circle-selector-container {
+    display: flex;
+}
+.circle-selector-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+}

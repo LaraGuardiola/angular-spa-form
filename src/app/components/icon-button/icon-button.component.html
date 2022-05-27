@@ -1,0 +1,7 @@
+<div class="wrapper">
+    <div #button (click)="onClick($event)" class="icon-button">
+        <div #icon class="symbol"><fa-icon [icon]="symbol"></fa-icon></div>
+        <div #text class="word"><p>{{ buttonText }}</p></div>
+    </div>
+</div>
+<!-- wrapper is only useful for demo purposes, so it has some extra margin-->

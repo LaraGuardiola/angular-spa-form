@@ -1,0 +1,3 @@
+<div class="tile-selector">
+    <button #buttons (click)="onClick($event)" [disabled]="isDisabled" *ngFor="let btn of btns">{{ btn }}</button>
+</div>

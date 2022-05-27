@@ -1,0 +1,33 @@
+.info-box {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: fit-content;
+    background-color: #eefafa;
+    border-radius: 5px;
+    color: #3e9fa0;
+}
+
+.icon{
+    padding: 0.5em;
+    font-size: 2em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    
+}
+
+.first-text{
+    height: 100%;
+    margin: 0;
+}
+
+.second-text {
+    font-weight: 100;
+    margin:0;
+    padding-top: 0.5em;
+}
+

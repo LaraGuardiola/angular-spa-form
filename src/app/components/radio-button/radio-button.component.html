@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div *ngFor="let btn of displayLists; let i = index" class="radio-button">
+        <div class="radio-section">
+            <div class="radio">
+                <input (change)="onCheck($event)" class="radio-btn" type="radio" name="radio-button" [value]="itemList[i].radioValues[i]">
+            </div>
+            <div class="text">
+                <p [innerHTML]="itemList[i].mainText[i] | bypassSanitizer"></p>
+            </div>
+        </div>
+        <div *ngIf="itemList[i].displayLists[i]" class="list" #lista>
+            <div class="ul-list">
+                <div class="list-item" *ngFor="let item of itemList[i].list; let e = index">
+                    <div class="icon"><fa-icon [icon]="itemList[i].symbol[e]"></fa-icon></div>
+                    <div class="paragraph">{{ itemList[i].list[e] }}</div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="itemList[i].isRecommended[i]" class="recommended">
+            <p>{{ recommendedText }}</p>
+        </div>      
+    </div>
+</div>
+

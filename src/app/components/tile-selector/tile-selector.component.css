@@ -1,0 +1,9 @@
+.tile-selector > button {
+    background-color: #ecf0f8;
+    padding: 0.8em;
+    margin: 0.1em;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2em;
+}

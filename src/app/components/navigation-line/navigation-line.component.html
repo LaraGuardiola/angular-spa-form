@@ -1,0 +1,26 @@
+<div class="navigation-line">
+    <div class="line">
+        <ng-container *appNavigationLine="elemList; let i = index">
+            <div class="nav-circle" [style]="circleStyle" #circle>
+                <div #tick>
+                    <fa-icon [icon]="symbol"></fa-icon>
+                </div>
+            </div>
+            <div #line class="nav-line" [style]="lineStyle" *ngIf="i !== elemList.length - 1">
+            </div>
+        </ng-container>
+    </div>
+
+    <div class="list">
+        <ng-container *appNavigationLine="elemList; let i = index">
+            <div #list class="list-line" [style]="listStyle">
+                {{ elemList[i] }}
+            </div>
+        </ng-container> 
+    </div>
+</div>
+<!--<div class="form">
+    <input #input (input)="onComplete()" type="text">
+    <button class="button is-primary is-active" [disabled]="defaultValue === 0" (click)="previous()">previous</button>
+    <button class="button is-info is-active"[disabled]="input.value.length === 0" (click)="next()">next</button>
+</div>-->

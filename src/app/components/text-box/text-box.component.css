@@ -1,0 +1,26 @@
+.text-box {
+    position: relative;
+}
+
+.input {
+    outline: 0;
+    border: 1px transparent;
+    border-radius: 5px;
+    text-indent: 20px;
+}
+
+/* top = (.input height/2) - (.placeholder font-size/2) */
+
+.placeholder {
+    position: absolute;
+    pointer-events: none;   
+}
+
+.icon {
+    position: absolute;
+}
+
+.info {
+    margin-left: 20px;
+    margin-top: 5px;
+}

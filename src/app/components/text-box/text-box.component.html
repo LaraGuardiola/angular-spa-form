@@ -1,0 +1,14 @@
+<div class="text-box">
+    <input 
+        class="input"  
+        [type]="inputType"
+        (input)="displayWarnings()"
+        (focus)="onFocus()"
+        (focusout)="onFocusOut()"
+        #input
+    >
+    <span #placeHODL class="placeholder">{{ placeholder }}</span>
+    <div class="icon" #icon><fa-icon *ngIf="hasWarning" [icon]="symbol"></fa-icon></div>
+    <div class="info" #message>{{ msg }}</div>
+</div>
+
