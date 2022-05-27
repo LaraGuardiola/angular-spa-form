@@ -77,6 +77,7 @@ export class TextBoxComponent implements OnInit {
    @ViewChild('placeHODL') placeHODL: ElementRef | any
    @ViewChild('icon') icon: ElementRef | any
    @ViewChild('message') message: ElementRef | any
+   @ViewChild('inputParent') inputParent: ElementRef | any
 
   ngOnInit(): void {}
 
@@ -98,6 +99,7 @@ export class TextBoxComponent implements OnInit {
     this.setInputColors()
     this.setInputBorder()
     this.setInputSize()
+    this.setDivSize()
   }
 
   setInputColors(): void {
@@ -108,6 +110,10 @@ export class TextBoxComponent implements OnInit {
     this.input.nativeElement.style.borderBottom = '2px solid #88878b'
   }
 
+  setDivSize(): void {
+    this.inputParent.nativeElement.style.setProperty('height', `${this.height}px`)
+    this.inputParent.nativeElement.style.setProperty('width', `${this.width}px`)
+  }
   setInputSize(): void {
     this.input.nativeElement.style.setProperty('height', `${this.height}px`)
     this.input.nativeElement.style.setProperty('width', `${this.width}px`)
