@@ -17,17 +17,18 @@
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    
 }
+
 
 .first-text{
     height: 100%;
     margin: 0;
+    margin-left: 1.6em;
+    margin-top: 0.8em;
 }
 
 .second-text {
     font-weight: 100;
-    margin:0;
-    padding-top: 0.5em;
+    margin:0;   
 }
 

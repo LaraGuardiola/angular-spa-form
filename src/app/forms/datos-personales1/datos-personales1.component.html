@@ -1,1 +1,64 @@
-<p>it works datos personales!</p>
+<div class="titular">
+    <h1>Tu cuenta guapo!</h1>
+    <p>Elegir una contraseña y cree su cuenta online</p>
+</div>
+<div class="info-box">
+    <app-info-box
+        [firstText]="'<strong>Las ventajas de tu cuenta online</strong>'"
+        [secondText]="ul"
+    >
+    </app-info-box>
+</div>
+<div>
+    <div class="input-form">
+        <app-text-box 
+            class="inputs"
+            [placeholder]="'Email'"
+            [msg]="'Tu email te servirá para conectarte a tu cuenta online'"
+        >
+        </app-text-box>
+        <app-text-box 
+            class="inputs"
+            [placeholder]="'Crea tu contraseña'"
+            [msg]="'Tu contraseña debe tener al menos 12 caracteres, una mayúscula y un símbolo especial'"
+        >
+        </app-text-box>
+        <app-text-box 
+            class="inputs"
+            [placeholder]="'Repite tu contraseña'"
+            [msg]="''"
+        >
+        </app-text-box>
+    </div>
+    <div class="radio-buttons">
+        <div class="radio-input">
+            <div class="radio-btn">
+                <input type="radio">
+            </div>
+            <div class="radio-paragraph">
+                <p>Autorizo a Sergio Y a todos sus colegas a que traten mis datos personales proporcionados con fines de comunicación y marketing. (información en https://everythingisalie.com)</p>
+            </div>    
+        </div>
+        <div class="radio-input">
+            <div class="radio-btn">
+                <input type="radio">
+            </div>
+            <div class="radio-paragraph">
+                <p>Autorizo a regalar todos mis datos personales, ahorros y secretos mas oscuros, sin posibilidad de retractarse en un futuro</p>
+            </div>    
+        </div>
+        <div class="radio-input">
+            <div class="radio-btn">
+                <input type="radio">
+            </div>
+            <div class="radio-paragraph">
+                <p>Consentimiento de datos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, possimus?</p>
+            </div>    
+        </div>
+    </div>
+    <div class="btn-crear-cuenta">
+        <div>
+            <app-buttonator [isDisabled]="true" [buttonText]="'CREAR CUENTA'"></app-buttonator>
+        </div>
+    </div>
+</div>

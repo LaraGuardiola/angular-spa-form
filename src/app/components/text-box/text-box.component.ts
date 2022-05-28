@@ -45,7 +45,7 @@ export class TextBoxComponent implements OnInit {
 
   constructor() {
     this.inputType = 'password'
-    this.height = 70
+    this.height = 54
     this.width = 600
     this.fontSize = 14
     this.backgroundColor = '#e8ebf2'

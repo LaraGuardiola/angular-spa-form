@@ -29,8 +29,8 @@ export class ButtonatorComponent implements OnInit {
     this.fontFamily = 'Segoe UI'
     this.fontWeight = '600'
     this.fontSize = '1.5em'
-    this.width = '100vw'
-    this.height = '100vh'
+    this.width = 'fit-content'
+    this.height = 'fit-content'
   }
 
   @ViewChild('btn') btn: ElementRef | any
@@ -54,10 +54,13 @@ export class ButtonatorComponent implements OnInit {
     if(this.width) {
       this.btn.nativeElement.style.setProperty('width', this.width)
     }
+    if(this.isDisabled) {
+      this.btn.nativeElement.style.setProperty('opacity', '0.5')
+    }
   }
 
   onClick(event: Event): void {
-    this.btn.nativeElement.style.setProperty('background-color', `rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`)
+    //this.btn.nativeElement.style.setProperty('background-color', `rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`)
     let btn = (event.target as HTMLElement)
     console.log(btn)
   }

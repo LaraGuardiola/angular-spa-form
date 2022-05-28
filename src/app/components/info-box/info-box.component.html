@@ -1,7 +1,11 @@
 <div class="info-box">
     <div class="icon"><fa-icon [icon]="icon"></fa-icon></div>
     <div class="text">
-        <p class="first-text" [innerHTML]="firstText | bypassSanitizer"></p>
-        <p class="second-text" [innerHTML]="secondText | bypassSanitizer"></p>
+        <div class="cell">
+            <p class="first-text" [innerHTML]="firstText | bypassSanitizer"></p>
+        </div>
+        <div class="cell">
+            <div class="second-text" [innerHTML]="secondText | bypassSanitizer"></div>
+        </div>
     </div>
 </div>

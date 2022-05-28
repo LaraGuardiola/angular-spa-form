@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { faCommentDollar, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb } from '@fortawesome/free-regular-svg-icons';
+import { faCircleDot, faCommentDollar, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-info-box',
@@ -13,7 +14,7 @@ export class InfoBoxComponent implements OnInit {
   @Input() secondText: string
 
   constructor() { 
-    this.icon = faCommentDollar
+    this.icon = faLightbulb
     this.firstText = '¿Sabes por qué nuestros clientes eligen BankReady?'
     this.secondText = '<u>Te lo explicamos aquí abajo</u>'
   }

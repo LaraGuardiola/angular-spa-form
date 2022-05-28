@@ -1,0 +1,26 @@
+.info-box {
+    margin-bottom: 1em;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: -1.5em;
+}
+
+.radio-input {
+    display: flex;
+    justify-content: flex-start;    
+    align-items: center;
+}
+
+.radio-paragraph{
+    margin-left: 1em;
+}
+
+.btn-crear-cuenta {
+    display: flex;
+    width: 600px;
+    justify-content: flex-end;
+}
