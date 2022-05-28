@@ -54,7 +54,7 @@ export class NavigationLineComponent implements OnInit {
     this.symbol = faCheck
     this.size = 30
     this.lineWidth = 6
-    this.lineHeight = 70
+    this.lineHeight = 40
     this.defaultValue = 4
     this.defaultBGcolor = '#f0f1f8'
     this.highlightedBGColor = '#1aafb6'

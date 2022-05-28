@@ -11,11 +11,11 @@
     margin-top: 2em;
 }
 .nav-section{
-    width: 25vw;
+    width: 20vw;
 }
 
 .form {
-    width: 75vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     margin-top: 2em;
